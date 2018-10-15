@@ -1,0 +1,512 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  text-decoration: none;
+  font-size: 11px;
+  color: gray;
+}
+
+.yt-block {
+  display: block !important;
+  width: 100%;
+}
+
+.yt-btn {
+  //padding: 0 13px;
+  display: inline-block;
+  overflow: hidden;
+  height: 40px;
+  text-align: center;
+  line-height: 40px !important;
+  position: relative;
+  outline: transparent !important;
+  border: none;
+  font-weight: 600;
+  /* box-shadow: 0 0 4px 0 rgba(0,0,0,.17); */
+  transition: all .1s ease-in;
+  border-radius: 50px;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+  border: none;
+  img {
+    width: 25px;
+    vertical-align: middle;
+  }
+}
+
+.yt-btn.yt-button-red {
+  background-color: #ff5e64;
+  color: #fff;
+  cursor: pointer;
+  i{
+    color:#fff;
+  }
+  &:hover {
+    color: #ff5e64 !important;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .17);
+    background-color: #fff !important;
+    border-color: #fff !important;
+    i{
+      color:#ff5e64;
+    }
+  }
+}
+
+.yt-btn.yt-button-white {
+  color: #ff5e64 !important;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .17);
+  background-color: #fff !important;
+  border-color: #fff !important;
+  cursor: pointer;
+  &:hover {
+    color: #fff !important;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .17);
+    background-color: #ff5e64 !important;
+    border-color: #ff5e64 !important;
+
+  }
+}
+
+.yt-btn.yt-button-green {
+  background: #32b339;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.yt-btn.yt-button-green:hover {
+  color: #32b339 !important;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .17);
+  background-color: #fff !important;
+  border-color: #fff !important;
+}
+
+.yt-btn.yt-button-orange {
+  background: #ffcc00;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.yt-btn.yt-button-orange:hover {
+  color: #ffcc00 !important;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .17);
+  background-color: #fff !important;
+  border-color: #fff !important;
+}
+
+.yt-btn.yt-button-gray {
+  background: gray;
+  color: #fff !important;
+  cursor: pointer;
+  &:hover {
+    color: gray !important;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .17);
+    background-color: #fff !important;
+  }
+}
+
+.yt-container-dropdown {
+  position: relative;
+  width: 300px;
+  height: 330px;
+  /*border: 1px solid #efefef;*/
+  background-color: #ffffff;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, .08);
+  font-family: Arial;
+}
+
+.yt-header {
+  padding: 45px 20px 15px 20px;
+  text-align: center;
+}
+
+.yt-header:after {
+  content: '';
+  width: 40px;
+  height: 1px;
+  background-color: #dedede;
+  margin: 15px auto;
+  display: block;
+}
+
+.yt-header-toplinks {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  position: absolute;
+  list-style: none;
+  display: none;
+  &.show{
+    display: block;
+  }
+}
+
+.yt-header-toplinks:after {
+  content: '';
+  width: 100%;
+  display: block;
+  clear: both;
+}
+
+.yt-header-toplinks li {
+  float: right;
+
+}
+
+.yt-header-toplinks li a {
+  padding: 7px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 9px;
+}
+
+.yt-header a.yt-logo {
+  font-size: 27px !important;
+  font-weight: 600;
+  font-family: "Arial Black";
+}
+
+.yt-header a.yt-logo strong, .yt-header a.yt-logo strong i {
+  font-size: 27px !important;
+  color: #ff5e64 !important;
+}
+
+.yt-header a.yt-logo span {
+  font-size: 27px !important;
+  color: #545454;
+}
+
+.yt-header a.yt-logo small {
+  font-size: 27px !important;
+  color: #cacaca;
+}
+
+.yt-header .package {
+  display: block;
+  font-weight: 600;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.yt-header .package.free {
+  color: #bdbdbd;
+}
+
+.yt-header .package.free i {
+  display: none;
+}
+
+.yt-header .package.premium, .yt-header .package.premium i {
+  color: #00b96f;
+}
+
+.yt-header .package i {
+  font-size: 6px;
+  vertical-align: middle;
+}
+
+.yt-content {
+
+}
+
+.yt-content .yt-pages {
+  display: none;
+}
+
+.yt-content .yt-form {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.yt-content .yt-form .yt-form-header {
+  text-align: center;
+}
+
+.yt-content .yt-form .yt-form-header h1 {
+  font-size: 17px;
+  color: #888888;
+  margin: 0px 0px 18px 0px;
+}
+
+.yt-content {
+  .yt-form {
+    .yt-form-control {
+      margin-bottom: 7px;
+      label {
+        &.error {
+          font-size: 7px;
+          color: #ff5e64;
+        }
+      }
+    }
+  }
+}
+
+.yt-content .yt-form .yt-form-control input[type=text],
+.yt-content .yt-form .yt-form-control input[type=password] {
+  width: 179px;
+  outline: none;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .17);
+  font-weight: 600;
+  font-size: 9px;
+}
+
+.yt-content .yt-form .yt-form-control input[type=text]:focus,
+.yt-content .yt-form .yt-form-control input[type=password]:focus {
+  outline: none;
+}
+
+.yt-content .yt-form .yt-form-button {
+
+}
+
+.yt-content .yt-form-footer {
+  padding-top: 5px;
+}
+
+.yt-content .yt-form-footer a {
+  font-size: 9px;
+}
+
+.yt-footer {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.yt-footer-bottomlinks {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  position: absolute;
+  list-style: none;
+}
+
+.yt-footer-bottomlinks:after {
+  content: '';
+  width: 100%;
+  display: block;
+  clear: both;
+}
+
+.yt-footer-bottomlinks li {
+  float: right;
+
+}
+
+.yt-footer-bottomlinks li a {
+  padding: 7px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 9px;
+}
+
+.margin-left-5 {
+  margin-left: 5px;
+}
+
+.margin-left-10 {
+  margin-left: 10px;
+}
+
+.margin-left-15 {
+  margin-left: 15px;
+}
+
+.margin-left-20 {
+  margin-left: 20px;
+}
+
+.margin-left-25 {
+  margin-left: 25px;
+}
+
+.margin-left-30 {
+  margin-left: 30px;
+}
+
+.margin-top-5 {
+  margin-top: 5px;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-top-15 {
+  margin-top: 15px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.margin-top-25 {
+  margin-top: 25px;
+}
+
+.margin-top-30 {
+  margin-top: 30px;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.width-100 {
+  width: 100px !important;
+}
+
+//Loading  Start
+
+.yt-loading {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.82);
+}
+
+.yt-loading div {
+  left: 39%;
+  top: 37%;
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid #ff5e64;
+  border-radius: 50%;
+  animation: yt-loading 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #ff5e64 transparent transparent transparent;
+}
+
+.yt-loading div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.yt-loading div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.yt-loading div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes yt-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+//Loading  End
+
+//Loading  Start
+
+.yt-alert {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  .yt-alert-content {
+    width: 200px;
+    margin: 95px auto;
+    & > div {
+      margin-bottom: 15px;
+      color: #2f2f2f;
+      i {
+        font-size: 30px !important;
+        display: none;
+      }
+      span {
+        font-size: 15px;
+        color: #2f2f2f;
+        font-weight: 600;
+      }
+    }
+  }
+  &.yt-alert-success {
+    .yt-alert-content {
+      & > div {
+        i {
+          color: green;
+          &.fa-check-circle {
+            display: inline-block;
+          }
+        }
+        span {
+
+        }
+      }
+    }
+  }
+  &.yt-alert-danger {
+    .yt-alert-content {
+      & > div {
+        i {
+          color: red;
+          &.fa-ban {
+            display: inline-block;
+          }
+        }
+        span {
+
+        }
+      }
+    }
+  }
+  &.yt-alert-warning {
+    .yt-alert-content {
+      & > div {
+        i {
+          color: orange;
+          &.fa-exclamation-triangle {
+            display: inline-block;
+          }
+        }
+        span {
+
+        }
+      }
+    }
+  }
+}
+
+//Loading  End
+
+
+
+
+
+
+
+
