@@ -1,58 +1,46 @@
 {
-	"name": "YTIzlen-Extension-Frontend",
-	"version": "1.0.0",
-	"description": "",
-	"main": "gulpfile.js",
-	"scripts": {
-		"clean": "rimraf dist && mkdir dist",
-		"js": "uglifyjs src/start.js > dist/start.js & uglifyjs -c drop_console=true src/main.js > dist/main.js",
-		"json": "json-minify src/manifest.json > dist/manifest.json",
-		"copy": "node build.js copy",
-		"build": "npm run clean & npm run js & npm run json & npm run copy",
-		"postjs": "node build.js replaceJS",
-		"postjson": "node build.js replaceJSON",
-		"postbuild": "node build.js buildZip"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/ahmetyesil/YTIzlen-Extension-Frontend.git"
-	},
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/ahmetyesil/YTIzlen-Extension-Frontend/issues"
-	},
-	"homepage": "https://github.com/ahmetyesil/YTIzlen-Extension-Frontend#readme",
-	"dependencies": {
-		"animate.css": "^3.6.1",
-		"bootstrap": "^4.1.1",
-		"font-awesome": "^4.7.0",
-		"jquery": ">=1.6",
-		"jquery-rest-client": "^0.3.7",
-		"jquery-ui": "^1.12.1",
-		"jquery-ui-dist": "^1.12.1",
-		"jquery-validation": "^1.18.0",
-		"normalize.css": "^8.0.0",
-		"querystring": "^0.2.0",
-		"rimraf": "^2.6.2",
-		"shelljs": "^0.7.8",
-		"uglify-es": "^3.3.2",
-		"zip-dir": "^1.0.2",
-		"json-minify": "^1.0.0"
-	},
-	"devDependencies": {
-		"browser-sync": "^2.24.6",
-		"gulp": "^3.9.1",
-		"gulp-clean-css": "^3.9.3",
-		"gulp-concat": "^2.6.1",
-		"gulp-cssmin": "^0.2.0",
-		"gulp-font": "^1.0.4",
-		"gulp-jshint": "^2.1.0",
-		"gulp-livereload": "^3.8.1",
-		"gulp-minify": "^2.1.0",
-		"gulp-rename": "^1.2.2",
-		"gulp-sass": "^4.0.1",
-		"jshint": "^2.9.5",
-		"jshint-stylish": "^2.2.1"
-	}
+  "name": "youtube-watch-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmetyesil/youtube-watch-plugin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmetyesil/youtube-watch-plugin/issues"
+  },
+  "homepage": "https://github.com/ahmetyesil/youtube-watch-plugin#readme",
+  "dependencies": {
+    "animate.css": "^3.6.1",
+    "bootstrap": "^4.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": ">=1.6",
+    "jquery-rest-client": "^0.3.7",
+    "jquery-ui": "^1.12.1",
+    "jquery-ui-dist": "^1.12.1",
+    "jquery-validation": "^1.18.0",
+    "normalize.css": "^8.0.0",
+    "querystring": "^0.2.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-font": "^1.0.4",
+    "gulp-jshint": "^2.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify": "^2.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1"
+  }
 }
